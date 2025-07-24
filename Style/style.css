@@ -48,3 +48,42 @@
             visibility: visible;
         }
     }
+
+    /* banner section */
+    .banner-text h1 {
+        font-size: 45px;
+        font-weight: bold;
+        margin-bottom: 1px;
+    }
+
+    .banner-text h1 span {
+        color: #E95A08
+    }
+
+    .banner-text p {
+        color: #000000;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .banner {
+        margin-top: 180px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        .banner {
+            flex-wrap: wrap-reverse;
+        }
+
+        .banner-text h1 {
+            font-size: 24px;
+        }
+
+        .banner-text {
+            margin: 10px;
+        }
+
+    }
