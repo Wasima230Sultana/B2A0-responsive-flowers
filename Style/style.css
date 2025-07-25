@@ -75,10 +75,10 @@
         text-align: left;
     }
 
-    .banner img {
+    /* .banner img {
         width: 570px;
         height: 355px;
-    }
+    } */
 
     .banner {
         margin-top: 180px;
@@ -96,10 +96,10 @@
             font-size: 24px;
         }
 
-        .banner img {
+        /* .banner img {
             width: 100%;
             height: 245px;
-        }
+        } */
 
         .banner-text {
             margin: 10px;
@@ -108,6 +108,10 @@
     }
 
     /* our plants part */
+    .plants {
+        margin-bottom: 130px;
+    }
+
     .plants-text h1 {
         font-size: 50px;
         font-weight: bold;
@@ -132,16 +136,20 @@
     }
 
     .card-container img {
-        width: 100%;
+        /* width: 100%; */
         padding-bottom: 20px;
     }
 
     .card-container p {
         margin-bottom: -15px;
+        font-size: 22px;
+        font-weight: 500px;
     }
 
     .card-container h4 {
         margin-bottom: 35px;
+        font-size: 22px;
+        font-weight: bold;
     }
 
     .card {
@@ -164,6 +172,47 @@
         .plants {
             margin: 10px;
             align-items: center;
-            width: 100%;
+            /* width: 100%; */
+        }
+    }
+
+    /* lover section */
+    .lover-text h2 {
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .lover-text p {
+        color: #000000;
+        font-size: 22px;
+    }
+
+    .lover-section {
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 80px;
+    }
+
+    .badge img {
+        height: 300px;
+        /* width: 300px; */
+    }
+
+    .badge {
+        position: relative;
+        height: 100px;
+        left: 360px;
+    }
+
+    @media screen and (max-width: 576px) {
+        .badge {
+            visibility: hidden;
+        }
+
+        .lover-section {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
         }
     }
