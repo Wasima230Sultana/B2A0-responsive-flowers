@@ -13,8 +13,7 @@
     body {
         max-width: 1140px;
         margin: 0 auto;
-        /* margin-right: 200px; */
-
+        border: 1px solid black;
     }
 
     .btn {
@@ -44,9 +43,11 @@
     }
 
     .nav-section {
+        margin: 10px;
         margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        /* justify-content: space-between; */
+        grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
 
@@ -88,6 +89,7 @@
     @media screen and (max-width: 576px) {
         .banner {
             flex-wrap: wrap-reverse;
+            /* width: 100%; */
         }
 
         .banner-text h1 {
@@ -102,6 +104,7 @@
 
     /* our plants part */
     .plants {
+        margin: 10px;
         margin-bottom: 130px;
         text-align: center;
     }
@@ -149,7 +152,7 @@
     .card {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
+        gap: 10px;
     }
 
     .btn {
@@ -160,7 +163,6 @@
         .card {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
         }
 
         .plants {
@@ -188,7 +190,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
-        gap: 80px;
+        gap: 50px;
     }
 
     .badge img {
@@ -199,7 +201,7 @@
     .badge {
         position: relative;
         height: 100px;
-        left: 360px;
+        left: 340px;
     }
 
     @media screen and (max-width: 576px) {
@@ -291,18 +293,24 @@
     .img-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        gap: 10px;
         margin: 10px;
+        margin-bottom: 180px;
     }
 
     @media screen and (max-width: 576px) {
         .img-section {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            /* grid-template-rows: repeat(1, 1fr); */
+
+        }
+
+        .second-img img {
+            width: 540px;
         }
 
         .first-img img {
-            width: 750px;
+            width: 540px;
         }
     }
