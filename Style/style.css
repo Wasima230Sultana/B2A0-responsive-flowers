@@ -11,9 +11,9 @@
     }
 
     body {
-        max-width: 1140px;
-        margin: 0 auto;
-        border: 1px solid black;
+        /* max-width: 1140px;
+        margin: 0 auto; */
+        /* border: 1px solid black; */
     }
 
     .btn {
@@ -42,7 +42,14 @@
         gap: 48px;
     }
 
+    nav {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+
     .nav-section {
+        max-width: 1140px;
+        margin: 0 auto;
         margin: 10px;
         margin-top: 20px;
         display: grid;
@@ -79,6 +86,8 @@
     }
 
     .banner {
+        max-width: 1140px;
+        margin: 0 auto;
         margin-top: 180px;
         display: flex;
         justify-content: space-between;
@@ -150,6 +159,8 @@
     }
 
     .card {
+        max-width: 1140px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 10px;
@@ -217,6 +228,8 @@
 
     /* latest deals section */
     .latest-deals {
+        max-width: 1140px;
+        margin: 0 auto;
         text-align: center;
         margin-top: 150px;
     }
@@ -291,6 +304,8 @@
     }
 
     .img-section {
+        max-width: 1140px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -312,5 +327,60 @@
 
         .first-img img {
             width: 540px;
+        }
+    }
+
+    /* join section */
+    .join-section {
+        width: 100%;
+        background-image: url(../assets/news-letter-bg.png);
+        background-size: cover;
+        /* background-repeat: no-repeat; */
+        margin-bottom: 100px;
+        height: 400px;
+        text-align: center;
+        padding-top: 100px;
+        margin-left: 0px;
+    }
+
+    .join-section h2 {
+        color: #FFFFFF;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .join-section input {
+        /* height: 20px; */
+        width: 600px;
+        padding: 19px;
+    }
+
+    .btn1 {
+        width: 15%;
+    }
+
+    .join {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 576px) {
+        .join-section input {
+            width: 300px;
+            padding: 10px;
+        }
+
+        .join-section h2 {
+            font-size: 30px;
+        }
+
+        .join-section {
+            height: 200px;
+            padding-top: 50px;
+        }
+
+        .btn1 {
+            padding: 10px;
+            width: 25%;
         }
     }
